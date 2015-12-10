@@ -18,3 +18,6 @@ app.controller('channelsCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.channels = response.data
   });
 }]);
+
+app.controller('wishlistCtrl', ['$scope', '$http', function ($scope, $http) {
+}]);
