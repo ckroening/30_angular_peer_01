@@ -1,0 +1,14 @@
+<h1>Wishlist</h1>
+<p>Enter new channel here.</p>
+<form>
+    <label for="channelName">Channel Name:</label>
+    <input type="text" name="name" id="channelName" ng-model="channelName"></input>
+    <label for="channelPurpose">Channel Purpose:</label>
+    <input type="text" name="purpose" id="channelPurpose" ng-model="channelPurpose"></input>
+    <button type="submit" ng-click="submitChannel()">Submit Channel</button>
+</form>
+
+<div>
+    {{message}}
+</div>
+

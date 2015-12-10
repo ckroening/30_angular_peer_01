@@ -20,4 +20,13 @@ app.controller('channelsCtrl', ['$scope', '$http', function ($scope, $http) {
 }]);
 
 app.controller('wishlistCtrl', ['$scope', '$http', function ($scope, $http) {
+  $scope.submitChannel = function () {
+    $http({
+      url: '/api/channels',
+      method: 'post',
+      data: {channelName: $scope.channelName, channelPurpose: $scope.channelPurpose, channelExists: false}
+    }).then(function(){
+      $scope.message = 'Thanks for your submission!';
+    });
+  };
 }]);
